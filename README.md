@@ -1,5 +1,3 @@
-# docker-spyfall
-
 # What is Spyfall?
 
 Spyfall is a party game designed based on meteor.
@@ -12,7 +10,7 @@ Hosted version of the game: http://spyfall.dagint.com/
 # How to use this image
 
 ```bash
-docker run --name my-spyfall -p 80:80 -e MONGO_URL=mongodb://my-mongo-server/spyfall -d noamokman/spyfall
+docker run --name my-spyfall -p 80:80 -e MONGO_URL=mongodb://my-mongo-server/spyfall -d dagint/docker-spyfall
 ```
 
 Then, access it via `http://localhost` or `http://host-ip` in a browser.
@@ -23,6 +21,6 @@ You can use docker to host the mongo server like so:
 ```bash
 docker network create spyfall-network
 docker run --name spyfall-mongo --network spyfall-network -d mongo
-docker run --name my-spyfall -p 80:80 -e MONGO_URL=mongodb://spyfall-mongo/spyfall --network spyfall-network -d noamokman/spyfall
+docker run --name my-spyfall -p 80:80 -e MONGO_URL=mongodb://spyfall-mongo/spyfall --network spyfall-network -d dagint/docker-spyfall
 ```
 
