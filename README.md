@@ -5,7 +5,7 @@ This repo helps you run your own instance quickly
 
 The game's source code: https://github.com/dagint/spyfall/
 
-Hosted version of the game: http://spyfall.dagint.com/
+Hosted version of the game: http://spyfall.facepunch.me/
 
 # How to use this image
 
